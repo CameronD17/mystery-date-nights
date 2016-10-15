@@ -7,10 +7,13 @@ import { RouterModule }   from '@angular/router';
 
 import { routing } from './app.routes';
 
-import { DateNightListComponent } from './date-nights/date-night-list/date-night-list.component';
-import { DateNightDetailComponent } from './date-nights/date-night-detail/date-night-detail.component';
-import { DateNightMapComponent } from './date-nights/date-night-map/date-night-map.component';
-
+import { DateNightListComponent } from './date-night-list/date-night-list.component';
+import { DateNightFilterPipe } from './date-night-list/date-night-filter.pipe';
+import { DateNightOrderPipe } from './date-night-list/date-night-date-filter.pipe';
+import { DateNightDetailComponent } from './date-night-detail/date-night-detail.component';
+import { DateNightMapComponent } from './date-night-map/date-night-map.component';
+import { StarComponent } from './star-rating/star.component';
+import { CostComponent } from './cost-rating/cost.component';
 
 @NgModule({
   imports:      [ 
@@ -22,8 +25,12 @@ import { DateNightMapComponent } from './date-nights/date-night-map/date-night-m
   declarations: [ 
     AppComponent, 
     DateNightListComponent, 
+    DateNightFilterPipe,
+    DateNightOrderPipe, 
     DateNightDetailComponent,
-    DateNightMapComponent 
+    DateNightMapComponent,
+    StarComponent,
+    CostComponent
   ],
   bootstrap:    [ 
     AppComponent 

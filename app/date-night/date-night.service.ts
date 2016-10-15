@@ -8,18 +8,18 @@ export class DateNightService {
 
     private _dateNightData = 'data/date-nights.json';
     dateNight: IDateNight;
+    dateNightTypes: string[];
     constructor(private _http: Http) {}
 
     getDateNights(): Observable<IDateNight[]> {
         return this._http.get(this._dateNightData)
         .map((response: Response) => <IDateNight[]>response.json())
-        .do(data => console.log('All: ' + JSON.stringify(data)))
         .catch(this.handleError);
     }
 
-    getProduct(id: number): Observable<IDateNight> {
+    getProduct(slug: string): Observable<IDateNight> {
         return this.getDateNights()
-            .map((products: IDateNight[]) => products.find(p => p.dateNightId === id));
+            .map((products: IDateNight[]) => products.find(p => p.slug === slug));
     }
 
     private handleError(error: Response) {

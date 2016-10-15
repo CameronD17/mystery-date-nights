@@ -1,0 +1,35 @@
+<div class="col-md-10 col-md-offset-1">
+    <div class="panel panel-primary">
+        <div class="panel-heading">
+            {{ pageTitle }}
+        </div>
+        <div class="panel-body">
+            <div class="row">
+                <div class="col-md-2">Filter Location:</div>
+                <div class="col-md-6">
+                    <input [(ngModel)]='listFilter' type="text" />
+                </div>
+            </div>
+            <div class="table-responsive">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th><a (click)='changeSorting("locationName")'>Location</a></th>
+                            <th><a (click)='changeSorting("visitDate")'>Visit Date</a></th>
+                            <th><a (click)='changeSorting("type")'>Type</a></th>
+                            <th><a (click)='changeSorting("rating")'>Rating</a></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor='let dateNight of dateNights | orderBy: convertSorting() | dateNightFilter: listFilter'>
+                            <td><a [routerLink]="['/date', dateNight.slug]">{{ dateNight.locationName }}</a></td>
+                            <td>{{ dateNight.visitDate | date:"dd-MMM-yyyy" }}</td>
+                            <td>{{ dateNight.type }}</td>
+                            <td><star-rating [rating]='dateNight.starRatingCameron' [rating2]='dateNight.starRatingSasha'></star-rating></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

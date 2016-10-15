@@ -1,7 +1,7 @@
 import { Routes, RouterModule } from '@angular/router';
-import { DateNightListComponent } from './date-nights/date-night-list/date-night-list.component';
-import { DateNightDetailComponent } from './date-nights/date-night-detail/date-night-detail.component';
-import { DateNightMapComponent } from './date-nights/date-night-map/date-night-map.component';
+import { DateNightListComponent } from './date-night-list/date-night-list.component';
+import { DateNightDetailComponent } from './date-night-detail/date-night-detail.component';
+import { DateNightMapComponent } from './date-night-map/date-night-map.component';
 
 const routes: Routes =[
     { 
@@ -13,7 +13,7 @@ const routes: Routes =[
         component: DateNightMapComponent
     },
     {   
-        path: 'date/:id', 
+        path: 'date/:slug', 
         component: DateNightDetailComponent 
     },
     {

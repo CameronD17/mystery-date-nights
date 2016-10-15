@@ -1,5 +1,6 @@
 [
     {
+        "slug": "khushis",
         "dateNightId": 1,
         "locationName": "Khushi's",
         "visitDate": "2015-11-02",
@@ -14,6 +15,7 @@
         "website": "http://khushis.com"
     },
     {
+        "slug": "skylon",
         "dateNightId": 2,
         "locationName": "Skylon",
         "visitDate": "2015-11-11",
@@ -28,6 +30,7 @@
         "website": "Royal Festival Hall, Belvedere Rd, London SE1 8XX, United Kingdom"
     },
     {
+        "slug": "indigo-yard",
         "dateNightId": 3,
         "locationName": "Indigo Yard",
         "visitDate": "2015-12-15",
@@ -42,6 +45,7 @@
         "website": ""
     },
     {
+        "slug": "steak-on-stones",
         "dateNightId": 4,
         "locationName": "Steak on Stones",
         "visitDate": "2015-12-29",
@@ -56,6 +60,7 @@
         "website": ""
     },
     {
+        "slug": "vittoria",
         "dateNightId": 5,
         "locationName": "Vittoria on the Bridge",
         "visitDate": "2016-01-15",
@@ -70,6 +75,7 @@
         "website": ""
     },
     {
+        "slug": "apex-haymarket",
         "dateNightId": 6,
         "locationName": "Apex Haymarket",
         "visitDate": "2016-01-25",
@@ -84,6 +90,7 @@
         "website": ""
     },
     {
+        "slug": "contini-cannonball",
         "dateNightId": 7,
         "locationName": "Contini Cannonball",
         "visitDate": "2016-02-16",
@@ -98,6 +105,7 @@
         "website": ""
     },
     {
+        "slug": "montpeliers",
         "dateNightId": 8,
         "locationName": "Montpeliers",
         "visitDate": "2016-02-24",
@@ -112,6 +120,7 @@
         "website": ""
     },
     {
+        "slug": "hard-rock-gdansk",
         "dateNightId": 9,
         "locationName": "Hard Rock Café Gdańsk",
         "visitDate": "2016-03-16",
@@ -126,6 +135,7 @@
         "website": ""
     },
     {
+        "slug": "hard-rock-brussels",
         "dateNightId": 10,
         "locationName": "Hard Rock Café Brussels",
         "visitDate": "2016-03-19",
@@ -140,6 +150,7 @@
         "website": ""
     },
     {
+        "slug": "blue-goose",
         "dateNightId": 11,
         "locationName": "The Blue Goose",
         "visitDate": "2016-04-05",
@@ -154,6 +165,7 @@
         "website": ""
     },
     {
+        "slug": "corstorphine-inn",
         "dateNightId": 12,
         "locationName": "Corstorphine Inn",
         "visitDate": "2016-04-22",
@@ -168,6 +180,7 @@
         "website": ""
     },
     {
+        "slug": "the-terrace",
         "dateNightId": 13,
         "locationName": "The Terrace",
         "visitDate": "2016-05-08",
@@ -182,6 +195,7 @@
         "website": ""
     },
     {
+        "slug": "jessie-mays",
         "dateNightId": 14,
         "locationName": "Jessie Mays",
         "visitDate": "2016-05-19",
@@ -196,6 +210,7 @@
         "website": ""
     },
     {
+        "slug": "apex-waterloo-place",
         "dateNightId": 15,
         "locationName": "Apex Waterloo Place",
         "visitDate": "2016-06-18",
@@ -210,6 +225,7 @@
         "website": ""
     },
     {
+        "slug": "the-bothy",
         "dateNightId": 16,
         "locationName": "The Bothy",
         "visitDate": "2016-06-25",
@@ -224,6 +240,7 @@
         "website": ""
     },
     {
+        "slug": "mercat-bar",
         "dateNightId": 17,
         "locationName": "Mercat Bar",
         "visitDate": "2016-07-21",
@@ -238,6 +255,7 @@
         "website": ""
     },
     {
+        "slug": "beers-and-burgers",
         "dateNightId": 18,
         "locationName": "Beers and Burgers Grillhouse",
         "visitDate": "2016-07-27",
@@ -252,6 +270,7 @@
         "website": ""
     },
     {
+        "slug": "scran-and-scallie",
         "dateNightId": 19,
         "locationName": "Scran and Scallie",
         "visitDate": "2016-08-03",
@@ -266,6 +285,7 @@
         "website": ""
     },
     {
+        "slug": "kyloe",
         "dateNightId": 20,
         "locationName": "Kyloe",
         "visitDate": "2016-08-08",
@@ -280,6 +300,7 @@
         "website": ""
     },
     {
+        "slug": "foundry-39",
         "dateNightId": 21,
         "locationName": "Foundry 39",
         "visitDate": "2016-09-06",
@@ -294,6 +315,7 @@
         "website": ""
     },
     {
+        "slug": "sheep-heid-inn",
         "dateNightId": 22,
         "locationName": "Sheep Heid Inn",
         "visitDate": "2016-09-11",
@@ -308,6 +330,7 @@
         "website": ""
     },
     {
+        "slug": "whistle-stop-barber-shop",
         "dateNightId": 23,
         "locationName": "Whistle Stop Barber Shop",
         "visitDate": "2016-09-24",
@@ -322,15 +345,16 @@
         "website": ""
     },
     {
+        "slug": "murrayfield-bar",
         "dateNightId": 24,
-        "locationName": "Roseburn Bar",
+        "locationName": "Murrayfield Bar",
         "visitDate": "2016-10-08",
         "review": "Lorem ipsum text",
         "type": "Pub",
         "price": 3,
         "planner": "Cameron",
-        "starRatingCameron": 0,
-        "starRatingSasha": 0,
+        "starRatingCameron": 3.5,
+        "starRatingSasha": 3,
         "onMap": true,
         "address": "",
         "website": ""

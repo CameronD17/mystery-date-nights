@@ -1,4 +1,5 @@
 export interface IDateNight {
+    slug: string;
     dateNightId: number;
     locationName: string;
     visitDate: string;

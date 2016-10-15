@@ -6,10 +6,9 @@ import { Component } from '@angular/core';
     <div>
         <nav class="navbar navbar-default">
             <div class="container-fluid">
-                <a class="navbar-brand">{{ pageTitle }}</a>
+                <a class="navbar-brand" routerLink="/list" routerLinkActive="active">{{ pageTitle }}</a>
                 <ul class="nav navbar-nav">
-                    <li><a routerLink="/map" routerLinkActive="active">Date Night Map</a></li>
-                    <li><a routerLink="/list" routerLinkActive="active">Date Night List</a></li>
+                    <li><a routerLink="/map" routerLinkActive="active">View on Map</a></li>
                 </ul>
             </div>
         </nav>

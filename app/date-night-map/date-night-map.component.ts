@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-    templateUrl: 'app/date-nights/date-night-map/date-night-map.component.html'
+    templateUrl: 'app/date-night-map/date-night-map.component.html'
 })
 
 export class DateNightMapComponent {

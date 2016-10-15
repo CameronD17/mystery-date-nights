@@ -1,0 +1,42 @@
+<div class="col-md-10 col-md-offset-1">
+    <div class="panel panel-primary" *ngIf='dateNight'>
+        <div class="panel-heading">
+            <h1>{{ dateNight.locationName }}</h1>
+        </div>
+        <div class="panel-body">
+            <div class="row">
+                <div class="col-md-12">
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td>Visited on: </td>     
+                                <td>{{ dateNight.visitDate }}</td>
+                            </tr>
+                            <tr>
+                                <td>Restaurant Type: </td>     
+                                <td>{{ dateNight.type }}</td>
+                            </tr>
+                            <tr>
+                                <td>Average Cost: </td>     
+                                <td><cost-rating [rating]='dateNight.price'></cost-rating></td>
+                            </tr>
+                            <tr>
+                                <td>Rating (Cameron): </td>     
+                                <td><star-rating [rating]='dateNight.starRatingCameron'></star-rating></td>
+                            </tr>
+                            <tr>
+                                <td>Rating (Sasha): </td>     
+                                <td><star-rating [rating]='dateNight.starRatingSasha'></star-rating></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <br/>
+                    <p>{{ dateNight.website }}</p>
+                    <p>{{ dateNight.address }}</p>
+                    
+                    <p>{{ dateNight.review }}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -4,10 +4,12 @@ import { IDateNight } from '../date-night/date-night';
 import { DateNightService } from '../date-night/date-night.service';
 import { Observable } from 'rxjs/Rx';
 import { Subscription } from 'rxjs/Subscription';
+import { StarComponent } from '../star-rating/star.component';
+import { CostComponent } from '../cost-rating/cost.component';
 
 @Component({
-    providers: [DateNightService],
-    templateUrl: 'app/date-nights/date-night-detail/date-night-detail.component.html'
+    providers: [DateNightService, StarComponent, CostComponent],
+    templateUrl: 'app/date-night-detail/date-night-detail.component.html'
 })
 
 export class DateNightDetailComponent implements OnInit {
@@ -24,13 +26,13 @@ export class DateNightDetailComponent implements OnInit {
     ngOnInit(){
         this.sub = this.route.params.subscribe(
             params => {
-                let id = Number.parseInt(params['id']);          
-                this.pageTitle += `: ${id}`;
-                this.getDateNight(id);
+                let slug = params['slug'];          
+                this.pageTitle += `: ${slug}`;
+                this.getDateNight(slug);
         });
     }
-    getDateNight(id: number) {
-        this.service.getProduct(id).subscribe(
+    getDateNight(slug: string) {
+        this.service.getProduct(slug).subscribe(
             date => this.dateNight = date,
             error => this.errorMessage = <any>error);
     }

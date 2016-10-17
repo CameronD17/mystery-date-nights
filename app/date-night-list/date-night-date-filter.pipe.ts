@@ -5,7 +5,7 @@ import { Pipe,PipeTransform } from "@angular/core";@Pipe({
 })
 
 export class DateNightOrderPipe implements PipeTransform {
-    transform(array:Array<any>, args?) {
+    transform(array:Array<any>, args: any) {
         if(array) {
             let column = args
             let byVal = 1

@@ -27,7 +27,7 @@ export class DateNightListComponent implements OnInit {
                 error => this.errorMessage = <any>error);
     }
     
-    changeSorting(columnName): void {        
+    changeSorting(columnName: string): void {        
         if (this.column == columnName) {
             this.descending = !this.descending;
         } else {

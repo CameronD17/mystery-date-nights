@@ -15,7 +15,7 @@ var DateNightMapComponent = (function () {
         this.pageTitle = "Date night map";
     }
     DateNightMapComponent.prototype.ngAfterViewInit = function () {
-        this.leafletMap = L.map("map").setView([-3.1976, 55.9527], 12);
+        //this.leafletMap = L.map("map").setView([-3.1976, 55.9527], 12);
     };
     DateNightMapComponent = __decorate([
         core_1.Component({

@@ -12,7 +12,9 @@
         "starRatingSasha": 4,
         "onMap": true,
         "address": "10 Antigua St, Edinburgh EH1 3NH",
-        "website": "http://khushis.com"
+        "website": "http://khushis.com",
+        "latitiude": "55.9581",
+        "longitude": "-3.1850"
     },
     {
         "slug": "skylon",
@@ -26,8 +28,10 @@
         "starRatingCameron": 3.5,
         "starRatingSasha": 4.5,
         "onMap": false,
-        "address": "http://skylon-restaurant.co.uk",
-        "website": "Royal Festival Hall, Belvedere Rd, London SE1 8XX, United Kingdom"
+        "address": "Royal Festival Hall, Belvedere Rd, London SE1 8XX",
+        "website": "http://skylon-restaurant.co.uk",
+        "latitiude": "",
+        "longitude": ""
     },
     {
         "slug": "indigo-yard",
@@ -41,8 +45,10 @@
         "starRatingCameron": 3,
         "starRatingSasha": 3.5,
         "onMap": true,
-        "address": "",
-        "website": ""
+        "address": "7 Charlotte Ln, Edinburgh, EH2 4QZ",
+        "website": "http://indigoyardedinburgh.co.uk",
+        "latitiude": "55.9510",
+        "longitude": "-3.2095"
     },
     {
         "slug": "steak-on-stones",
@@ -56,8 +62,10 @@
         "starRatingCameron": 5,
         "starRatingSasha": 4.5,
         "onMap": true,
-        "address": "",
-        "website": ""
+        "address": "14 Picardy Place, Edinburgh, EH1 3JT",
+        "website": "http://steakonstones.co.uk",
+        "latitiude": "55.9572",
+        "longitude": "-3.1868"
     },
     {
         "slug": "vittoria",
@@ -71,8 +79,10 @@
         "starRatingCameron": 3.5,
         "starRatingSasha": 4,
         "onMap": true,
-        "address": "",
-        "website": ""
+        "address": "19 George IV Bridge, Edinburgh, EH1 1EN",
+        "website": "http://vittoriagroup.co.uk",
+        "latitiude": "55.9478",
+        "longitude": "-3.1919"
     },
     {
         "slug": "apex-haymarket",
@@ -86,8 +96,10 @@
         "starRatingCameron": 3,
         "starRatingSasha": 4,
         "onMap": true,
-        "address": "",
-        "website": ""
+        "address": "90 Haymarket Terrace, Edinburgh, EH12 5LQ",
+        "website": "http://apexhotels.co.uk",
+        "latitiude": "55.9462",
+        "longitude": "-3.2230"
     },
     {
         "slug": "contini-cannonball",
@@ -101,8 +113,10 @@
         "starRatingCameron": 3,
         "starRatingSasha": 3.5,
         "onMap": true,
-        "address": "",
-        "website": ""
+        "address": "356 Castlehill, Edinburgh, EH1 2NF",
+        "website": "http://contini.com",
+        "latitiude": "55.9487",
+        "longitude": "-3.1962"
     },
     {
         "slug": "montpeliers",
@@ -116,8 +130,10 @@
         "starRatingCameron": 3.5,
         "starRatingSasha": 4,
         "onMap": true,
-        "address": "",
-        "website": ""
+        "address": "159-161 Bruntsfield Place, Edinburgh, EH10 4DG",
+        "website": "http://montpeliersedinburgh.co.uk",
+        "latitiude": "55.9359",
+        "longitude": "-3.2092"
     },
     {
         "slug": "hard-rock-gdansk",
@@ -131,8 +147,10 @@
         "starRatingCameron": 4,
         "starRatingSasha": 3.5,
         "onMap": false,
-        "address": "",
-        "website": ""
+        "address": "Dlugi Targ 35/38, 80-830 Gdańsk, Poland",
+        "website": "http://hardrock.com",
+        "latitiude": "",
+        "longitude": ""
     },
     {
         "slug": "hard-rock-brussels",
@@ -146,8 +164,10 @@
         "starRatingCameron": 3,
         "starRatingSasha": 3,
         "onMap": false,
-        "address": "",
-        "website": ""
+        "address": "Grand Place 12A 1000 Bruxelles, Belgium",
+        "website": "http://hardrock.com",
+        "latitiude": "",
+        "longitude": ""
     },
     {
         "slug": "blue-goose",
@@ -161,8 +181,10 @@
         "starRatingCameron": 2.5,
         "starRatingSasha": 3,
         "onMap": true,
-        "address": "",
-        "website": ""
+        "address": "27 Lanark Road, Edinburgh, EH14 1TG",
+        "website": "http://thebluegoosecountrypub.co.uk",
+        "latitiude": "55.9231",
+        "longitude": "-3.2475"
     },
     {
         "slug": "corstorphine-inn",
@@ -176,8 +198,10 @@
         "starRatingCameron": 3.5,
         "starRatingSasha": 4,
         "onMap": true,
-        "address": "",
-        "website": ""
+        "address": "17 Corstorphine High Street, Edinburgh, EH12 7SU",
+        "website": "http://corstorphineinn.co.uk",
+        "latitiude": "55.9406",
+        "longitude": "-3.2833"
     },
     {
         "slug": "the-terrace",
@@ -191,8 +215,10 @@
         "starRatingCameron": 4,
         "starRatingSasha": 4,
         "onMap": true,
-        "address": "",
-        "website": ""
+        "address": "73 Saughton Road North, Edinburgh, EH12 7JB",
+        "website": "",
+        "latitiude": "55.9366",
+        "longitude": "-3.2790"
     },
     {
         "slug": "jessie-mays",
@@ -206,8 +232,10 @@
         "starRatingCameron": 3,
         "starRatingSasha": 3,
         "onMap": true,
-        "address": "",
-        "website": ""
+        "address": "316 Gorgie Road, Edinburgh, EH11 2QZ",
+        "website": "http://jessiemays.co.uk",
+        "latitiude": "55.9369",
+        "longitude": "-3.2376"
     },
     {
         "slug": "apex-waterloo-place",
@@ -221,8 +249,10 @@
         "starRatingCameron": 3.5,
         "starRatingSasha": 3.5,
         "onMap": true,
-        "address": "",
-        "website": ""
+        "address": "23-27 Waterloo Place, Edinburgh, EH1 3BH",
+        "website": "http://apexhotels.co.uk",
+        "latitiude": "55.9539",
+        "longitude": "-3.1869"
     },
     {
         "slug": "the-bothy",
@@ -236,8 +266,10 @@
         "starRatingCameron": 3,
         "starRatingSasha": 3.5,
         "onMap": true,
-        "address": "",
-        "website": ""
+        "address": "18 Corstorphine Road, Edinburgh, EH12 6HN",
+        "website": "http://bothyedinburgh.co.uk",
+        "latitiude": "55.9456",
+        "longitude": "-3.2436"
     },
     {
         "slug": "mercat-bar",
@@ -251,13 +283,15 @@
         "starRatingCameron": 4,
         "starRatingSasha": 3.5,
         "onMap": true,
-        "address": "",
-        "website": ""
+        "address": "28 West Maitland Street, Edinburgh, EH12 5DX",
+        "website": "http://mercatbar.co.uk",
+        "latitiude": "55.9470",
+        "longitude": "-3.2158"
     },
     {
-        "slug": "beers-and-burgers",
+        "slug": "burgers-and-beers",
         "dateNightId": 18,
-        "locationName": "Beers and Burgers Grillhouse",
+        "locationName": "Burgers and Beers Grillhouse",
         "visitDate": "2016-07-27",
         "review": "Lorem ipsum text",
         "type": "American",
@@ -266,8 +300,10 @@
         "starRatingCameron": 4,
         "starRatingSasha": 4.5,
         "onMap": true,
-        "address": "",
-        "website": ""
+        "address": "192A High Street, Royal Mile, Edinburgh, EH1 1RW",
+        "website": "http://burgersandbeersgrillhouse.co.uk",
+        "latitiude": "55.9498",
+        "longitude": "-3.1898"
     },
     {
         "slug": "scran-and-scallie",
@@ -281,8 +317,10 @@
         "starRatingCameron": 4.5,
         "starRatingSasha": 4,
         "onMap": true,
-        "address": "",
-        "website": ""
+        "address": "1 Comely Bank Road, Edinburgh, EH4 1DT",
+        "website": "http://scranandscallie.com",
+        "latitiude": "55.9592",
+        "longitude": "-3.2146"
     },
     {
         "slug": "kyloe",
@@ -296,8 +334,10 @@
         "starRatingCameron": 4.5,
         "starRatingSasha": 4.5,
         "onMap": true,
-        "address": "",
-        "website": ""
+        "address": "1-3 Rutland Street, Edinburgh, EH1 2AE",
+        "website": "http://kyloerestaurant.com",
+        "latitiude": "55.9500",
+        "longitude": "-3.2078"
     },
     {
         "slug": "foundry-39",
@@ -311,8 +351,10 @@
         "starRatingCameron": 3,
         "starRatingSasha": 4,
         "onMap": true,
-        "address": "",
-        "website": ""
+        "address": "39A Queensferry Street, Edinburgh, EH2 4RA",
+        "website": "http://foundryproject.com",
+        "latitiude": "55.9507",
+        "longitude": "-3.2090"
     },
     {
         "slug": "sheep-heid-inn",
@@ -326,8 +368,10 @@
         "starRatingCameron": 4,
         "starRatingSasha": 4,
         "onMap": true,
-        "address": "",
-        "website": ""
+        "address": "43-45 The Causeway, Edinburgh, EH15 3QA",
+        "website": "http://thesheepheidedinburgh.co.uk",
+        "latitiude": "55.9420",
+        "longitude": "-3.1486"
     },
     {
         "slug": "whistle-stop-barber-shop",
@@ -341,8 +385,10 @@
         "starRatingCameron": 3,
         "starRatingSasha": 3.5,
         "onMap": true,
-        "address": "",
-        "website": ""
+        "address": "66-67 South Bridge, Edinburgh, EH1 1LS",
+        "website": "http://whistlestopedinburgh.co.uk",
+        "latitiude": "55.9473",
+        "longitude": "-3.1859"
     },
     {
         "slug": "murrayfield-bar",
@@ -356,7 +402,26 @@
         "starRatingCameron": 3.5,
         "starRatingSasha": 3,
         "onMap": true,
-        "address": "",
-        "website": ""
+        "address": "57-59 Roseburn Terrace, Edinburgh, EH12 5NQ",
+        "website": "http://murrayfieldbar.com",
+        "latitiude": "55.9456",
+        "longitude": "-3.2355"
+    },
+    {
+        "slug": "shebeen",
+        "dateNightId": 25,
+        "locationName": "Shebeen Bar and Braai",
+        "visitDate": "2016-10-16",
+        "review": "Lorem ipsum text",
+        "type": "South African",
+        "price": 4,
+        "planner": "Sasha",
+        "starRatingCameron": 4.5,
+        "starRatingSasha": 4,
+        "onMap": true,
+        "address": "8 Morrison Street, Edinburgh, EH3 8BJ",
+        "website": "http://shebeenbar.co.uk",
+        "latitiude": "55.9459",
+        "longitude": "-3.2060"
     }
 ]

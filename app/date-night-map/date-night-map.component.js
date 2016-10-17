@@ -9,12 +9,17 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
+require('leaflet');
 var DateNightMapComponent = (function () {
     function DateNightMapComponent() {
-        this.pageTitle = "Date Night Map";
+        this.pageTitle = "Date night map";
     }
+    DateNightMapComponent.prototype.ngAfterViewInit = function () {
+        this.leafletMap = L.map("map").setView([-3.1976, 55.9527], 12);
+    };
     DateNightMapComponent = __decorate([
         core_1.Component({
+            selector: 'map',
             templateUrl: 'app/date-night-map/date-night-map.component.html'
         }), 
         __metadata('design:paramtypes', [])

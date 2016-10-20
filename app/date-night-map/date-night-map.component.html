@@ -3,6 +3,13 @@
         <div class="panel-heading">
             {{ pageTitle }}
         </div>
+    </div>
+    <div class="panel-body">            
         <div id="map"></div>
+        
+        <em>Not shown on map (outwith Edinburgh)</em>             
+        <ul *ngFor='let dateNight of dateNights'>
+            <li *ngIf='!dateNight.onMap'><a [routerLink]="['/date', dateNight.slug]">{{ dateNight.locationName }}</a></li>
+        </ul>
     </div>
 </div>

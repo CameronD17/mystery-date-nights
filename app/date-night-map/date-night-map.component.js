@@ -9,20 +9,46 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-require('leaflet');
+var date_night_service_1 = require('../date-night/date-night.service');
+var Rx_1 = require('rxjs/Rx');
 var DateNightMapComponent = (function () {
-    function DateNightMapComponent() {
-        this.pageTitle = "Date night map";
+    function DateNightMapComponent(_dateNightService) {
+        this._dateNightService = _dateNightService;
+        this.pageTitle = "Date Night Map";
+        this._dateNightData = 'data/date-nights.json';
     }
-    DateNightMapComponent.prototype.ngAfterViewInit = function () {
-        //this.leafletMap = L.map("map").setView([-3.1976, 55.9527], 12);
+    DateNightMapComponent.prototype.ngOnInit = function () {
+        var _this = this;
+        this.map = L.map('map', { scrollWheelZoom: false }).setView([55.94, -3.21], 13);
+        L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+        }).addTo(this.map);
+        this._dateNightService.getDateNights()
+            .subscribe(function (dateNights) {
+            _this.dateNights = dateNights;
+            _this.createGeoJSON(dateNights);
+        }, function (error) { return _this.errorMessage = error; });
+    };
+    DateNightMapComponent.prototype.handleError = function (error) {
+        console.error(error);
+        return Rx_1.Observable.throw(error.json().error || 'Server error');
+    };
+    DateNightMapComponent.prototype.createGeoJSON = function (data) {
+        for (var i = 0; i < data.length; i++) {
+            if (data[i].onMap) {
+                var marker = L.marker([data[i].latitude, data[i].longitude]).addTo(this.map);
+                marker.bindPopup("<a href='/date/" + data[i].slug + "'>" + data[i].locationName + "</a>");
+            }
+        }
     };
     DateNightMapComponent = __decorate([
         core_1.Component({
             selector: 'map',
-            templateUrl: 'app/date-night-map/date-night-map.component.html'
+            templateUrl: 'app/date-night-map/date-night-map.component.html',
+            styleUrls: ['app/date-night-map/date-night-map.component.css'],
+            providers: [date_night_service_1.DateNightService]
         }), 
-        __metadata('design:paramtypes', [])
+        __metadata('design:paramtypes', [date_night_service_1.DateNightService])
     ], DateNightMapComponent);
     return DateNightMapComponent;
 }());

@@ -3,7 +3,8 @@
     paths: {
       'npm:': 'node_modules/'
     },
-    map: {      
+    map: {          
+      leaflet:                              'npm:leaflet/dist/leaflet.js',  
       app: 'app',
       '@angular/core':                      'npm:@angular/core/bundles/core.umd.js',
       '@angular/common':                    'npm:@angular/common/bundles/common.umd.js',
@@ -16,7 +17,6 @@
       '@angular/upgrade':                   'npm:@angular/upgrade/bundles/upgrade.umd.js',
       'rxjs':                               'npm:rxjs',
       'angular-in-memory-web-api':          'npm:angular-in-memory-web-api',
-      'leaflet':                            'npm:leaflet/dist/leaflet.js'
     },
     packages: {
       app: {
@@ -28,9 +28,6 @@
       },
       'angular-in-memory-web-api': {
         main: './index.js',
-        defaultExtension: 'js'
-      },
-      leaflet: {
         defaultExtension: 'js'
       }
     },

@@ -5,10 +5,7 @@ import { Observable } from 'rxjs/Rx';
 
 @Injectable()
 export class DateNightService {
-
     private _dateNightData = 'data/date-nights.json';
-    dateNight: IDateNight;
-    dateNightTypes: string[];
     constructor(private _http: Http) {}
 
     getDateNights(): Observable<IDateNight[]> {

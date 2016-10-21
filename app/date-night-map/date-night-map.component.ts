@@ -31,7 +31,7 @@ export class DateNightMapComponent {
             .subscribe(
                 dateNights => {
                     this.dateNights = dateNights;
-                    this.createGeoJSON(dateNights);
+                    this.addMarkers(dateNights);
                 },
                 error => this.errorMessage = <any>error);
     }
@@ -41,7 +41,7 @@ export class DateNightMapComponent {
         return Observable.throw(error.json().error || 'Server error');
     }
 
-    createGeoJSON(data: any) {
+    addMarkers(data: any) {
         for (var i = 0; i < data.length; i++) {
             if (data[i].onMap) {
                 let marker = L.marker([data[i].latitude,data[i].longitude]).addTo(this.map);

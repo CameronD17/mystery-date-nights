@@ -7,6 +7,7 @@ import { RouterModule }   from '@angular/router';
 
 import { routing } from './app.routes';
 
+import { DateNightAboutComponent } from './about/date-night-about.component';
 import { DateNightListComponent } from './date-night-list/date-night-list.component';
 import { DateNightFilterPipe } from './date-night-list/date-night-filter.pipe';
 import { DateNightOrderPipe } from './date-night-list/date-night-date-filter.pipe';
@@ -24,6 +25,7 @@ import { CostComponent } from './cost-rating/cost.component';
   ],
   declarations: [ 
     AppComponent, 
+    DateNightAboutComponent,
     DateNightListComponent, 
     DateNightFilterPipe,
     DateNightOrderPipe, 

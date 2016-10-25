@@ -1,0 +1,19 @@
+.navbar-custom {
+    text-transform: uppercase;
+    font-family: $title-font;
+    width: 100%;
+    text-align: center;
+    padding: 15px 0 15px 0;
+    letter-spacing: 1px;
+    border-bottom: 6px solid $accent-colour;
+    
+    a {
+        font-size: 24px;
+        font-weight: bold;
+        
+        &:hover,&:focus,&:active {
+            outline: 0;
+            background-color: transparent;
+        }
+    }
+}

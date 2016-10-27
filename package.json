@@ -1,11 +1,11 @@
 {
   "name": "mystery-date-nights",
-  "version": "0.1.1",
+  "version": "0.1.0",
   "description": "List of reviews for our Mystery Date Nights",
   "author": "CameronD17",
   "repository": {
     "type": "git",
-    "url": "https://github.com/CameronD17/mystery-date-nights"
+    "url": ""
   },
   "scripts": {
     "postinstall": "typings install",

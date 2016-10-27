@@ -10,8 +10,8 @@ export class DateNightService {
 
     getDateNights(): Observable<IDateNight[]> {
         return this._http.get(this._dateNightData)
-            .map((response: Response) => <IDateNight[]>response.json())
-            .catch(this.handleError);
+        .map((response: Response) => <IDateNight[]>response.json())
+        .catch(this.handleError);
     }
 
     getProduct(slug: string): Observable<IDateNight> {
@@ -20,6 +20,7 @@ export class DateNightService {
     }
 
     private handleError(error: Response) {
+        console.error(error);
         return Observable.throw(error.json().error || 'Server error');
     }
 }

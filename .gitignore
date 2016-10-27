@@ -1,35 +1,6 @@
-**/app/**/*.js
-**/app/**/*.map
-node_modules
-jspm_packages
-bower_components
+# dependencies
+/node_modules
 
-.vs
-.vscode
-.sass-cache
-**/*.sou
-**/*.user
-bin
-obj
-packages
-
-.idea
-typings/**
-node_modules
-jspm_packages
-link-checker-results.txt
-**/*npm-debug.log.*
-*.js
-*.js.map
-e2e/**/*.js
-e2e/**/*.js.map
-_test-output
-_temp
+#System Files
 .DS_Store
 Thumbs.db
-
-!karma*.js
-!protractor*.js
-!systemjs.config.js
-!typings/typings.d.ts
-!wallaby.js

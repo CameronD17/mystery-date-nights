@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-    selector: 'mdn-app',
+    selector: 'app',
     templateUrl: 'app/app.component.html'
 })
 

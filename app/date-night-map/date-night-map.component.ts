@@ -21,7 +21,7 @@ export class DateNightMapComponent {
     constructor(private _dateNightService: DateNightService) {}
 
     ngOnInit(): void {
-        this.map = L.map('map',{scrollWheelZoom:false}).setView([55.94, -3.21], 13);
+        this.map = L.map('map',{scrollWheelZoom:false}).setView([55.94, -3.22], 12);
         L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
             attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
         }).addTo(this.map);

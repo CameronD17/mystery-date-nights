@@ -1,7 +1,7 @@
-//The pipe class implements the PipeTransform interface's transform method that accepts an input value and an optional array of parameters and returns the transformed value.
+import { Pipe,PipeTransform } from "@angular/core";
 
-import { Pipe,PipeTransform } from "@angular/core";@Pipe({
-  name: "orderBy"
+@Pipe({
+    name: "orderBy"
 })
 
 export class DateNightOrderPipe implements PipeTransform {
@@ -41,13 +41,13 @@ export class DateNightOrderPipe implements PipeTransform {
                     let aRating = a.starRatingCameron + a.starRatingSasha
                     let bRating = b.starRatingCameron + b.starRatingSasha
                     if(aRating < bRating) {
-                        return -1 * byVal;
+                        return 1 * byVal;
                     } else if (aRating > bRating) {
-                        return 1 * byVal;
-                    } else if(a.locationName < b.locationName) {
                         return -1 * byVal;
-                    } else if (a.locationName > b.locationName) {
+                    } else if(a.locationName < b.locationName) {
                         return 1 * byVal;
+                    } else if (a.locationName > b.locationName) {
+                        return -1 * byVal;
                     } else {
                         return 0;
                     }

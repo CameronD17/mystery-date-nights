@@ -4,3 +4,7 @@
 #System Files
 .DS_Store
 Thumbs.db
+
+# Misc
+*.xlsx
+**/*npm-debug.log.*

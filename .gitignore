@@ -8,3 +8,4 @@ Thumbs.db
 # Misc
 *.xlsx
 **/*npm-debug.log.*
+.sass-cache

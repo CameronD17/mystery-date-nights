@@ -7,7 +7,7 @@ import { StarComponent } from '../star-rating/star.component';
 @Component({
     templateUrl: 'app/date-night-list/date-night-list.component.html',
     styleUrls: ['app/date-night-list/date-night-list.component.css'],
-    providers: [DateNightService, StarComponent]
+    providers: [StarComponent]
 })
 
 export class DateNightListComponent implements OnInit {

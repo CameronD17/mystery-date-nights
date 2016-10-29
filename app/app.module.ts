@@ -1,11 +1,11 @@
-import { NgModule }      from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
+import { NgModule }       from '@angular/core';
+import { BrowserModule }  from '@angular/platform-browser';
 import { FormsModule }    from '@angular/forms';
-import { AppComponent }   from './app.component';
-import { HttpModule } from '@angular/http';
+import { HttpModule }     from '@angular/http';
 import { RouterModule }   from '@angular/router';
 
-import { routing } from './app.routes';
+import { AppComponent }   from './app.component';
+import { routing }        from './app.routes';
 
 import { DateNightAboutComponent } from './about/date-night-about.component';
 import { DateNightListComponent } from './date-night-list/date-night-list.component';
@@ -15,6 +15,7 @@ import { DateNightDetailComponent } from './date-night-detail/date-night-detail.
 import { DateNightMapComponent } from './date-night-map/date-night-map.component';
 import { StarComponent } from './star-rating/star.component';
 import { CostComponent } from './cost-rating/cost.component';
+import { DateNightService } from './date-night/date-night.service';
 
 @NgModule({
   imports:      [ 
@@ -36,6 +37,9 @@ import { CostComponent } from './cost-rating/cost.component';
   ],
   bootstrap:    [ 
     AppComponent 
+  ],
+  providers: [
+    DateNightService
   ]
 })
 

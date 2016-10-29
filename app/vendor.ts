@@ -1,3 +1,9 @@
+import '@angular/platform-browser-dynamic';
+import '@angular/platform-browser';
+import '@angular/core';
+import '@angular/http';
+import '@angular/router';
+import 'rxjs/Rx';
 import 'core-js/es6/symbol';
 import 'core-js/es6/object';
 import 'core-js/es6/function';

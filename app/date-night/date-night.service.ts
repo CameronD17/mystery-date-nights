@@ -6,12 +6,23 @@ import { Observable } from 'rxjs/Rx';
 @Injectable()
 export class DateNightService {
     private _dateNightData = 'app/date-night/date-nights.json';
+    private cached: IDateNight[];
     constructor(private _http: Http) {}
 
     getDateNights(): Observable<IDateNight[]> {
-        return this._http.get(this._dateNightData)
-        .map((response: Response) => <IDateNight[]>response.json())
-        .catch(this.handleError);
+        if (this.cached) {
+            console.log("Cached.");
+            return Observable.of(this.cached);
+        }
+        else {
+            console.log("Not cached.");
+            return this._http.get(this._dateNightData)
+                .map(res => res.json())
+                .do((data) => {
+                    this.cached = data;
+                })
+                .catch(this.handleError);
+        }
     }
 
     getProduct(slug: string): Observable<IDateNight> {

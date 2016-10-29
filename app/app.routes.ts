@@ -15,16 +15,12 @@ const routes: Routes =[
     },
     { 
         path: '', 
-        component: DateNightAboutComponent
+        component: DateNightAboutComponent,
+        pathMatch: 'full'
     },
     {   
         path: 'date/:slug', 
         component: DateNightDetailComponent 
-    },
-    {
-        path: '',
-        redirectTo: '/',
-        pathMatch: 'full'
     }
 ];
 

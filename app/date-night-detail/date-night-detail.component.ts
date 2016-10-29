@@ -8,8 +8,8 @@ import { StarComponent } from '../star-rating/star.component';
 import { CostComponent } from '../cost-rating/cost.component';
 
 @Component({
-    providers: [DateNightService, StarComponent, CostComponent],
-    templateUrl: 'app/date-night-detail/date-night-detail.component.html'
+    templateUrl: 'app/date-night-detail/date-night-detail.component.html',
+    providers: [StarComponent, CostComponent]
 })
 
 export class DateNightDetailComponent implements OnInit {

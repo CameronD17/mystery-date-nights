@@ -7,8 +7,7 @@ import { Observable } from 'rxjs/Rx';
 @Component({
     selector: 'map',
     templateUrl: 'app/date-night-map/date-night-map.component.html',
-    styleUrls: ['app/date-night-map/date-night-map.component.css'], 
-    providers: [DateNightService]
+    styleUrls: ['app/date-night-map/date-night-map.component.css']
 })
 
 export class DateNightMapComponent {

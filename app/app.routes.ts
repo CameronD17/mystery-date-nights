@@ -14,14 +14,22 @@ const routes: Routes =[
         component: DateNightMapComponent
     },
     { 
-        path: '', 
-        component: DateNightAboutComponent,
-        pathMatch: 'full'
+        path: 'about', 
+        component: DateNightAboutComponent
     },
     {   
         path: 'date/:slug', 
         component: DateNightDetailComponent 
+    },
+    {
+        path: '',
+        redirectTo: '/about',
+        pathMatch: 'full'
+    },
+    { 
+        path: '**',
+        redirectTo: '/about'
     }
 ];
 
-export const routing = RouterModule.forRoot(routes);
+export const routing = RouterModule.forRoot(routes, { useHash: false });

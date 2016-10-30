@@ -3,6 +3,7 @@ import { BrowserModule }  from '@angular/platform-browser';
 import { FormsModule }    from '@angular/forms';
 import { HttpModule }     from '@angular/http';
 import { RouterModule }   from '@angular/router';
+import { PathLocationStrategy, LocationStrategy } from '@angular/common';
 
 import { AppComponent }   from './app.component';
 import { routing }        from './app.routes';
@@ -17,13 +18,7 @@ import { StarComponent } from './star-rating/star.component';
 import { CostComponent } from './cost-rating/cost.component';
 import { DateNightService } from './date-night/date-night.service';
 
-@NgModule({
-  imports:      [ 
-    BrowserModule,    
-    FormsModule,
-    routing, 
-    HttpModule
-  ],
+@NgModule({  
   declarations: [ 
     AppComponent, 
     DateNightAboutComponent,
@@ -38,8 +33,18 @@ import { DateNightService } from './date-night/date-night.service';
   bootstrap:    [ 
     AppComponent 
   ],
+  imports:      [ 
+    BrowserModule,    
+    FormsModule,
+    routing, 
+    HttpModule
+  ],
   providers: [
-    DateNightService
+    DateNightService,
+    { 
+      provide: LocationStrategy, 
+      useClass: PathLocationStrategy
+    }
   ]
 })
 

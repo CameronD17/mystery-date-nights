@@ -15,6 +15,8 @@ import { CostComponent } from '../cost-rating/cost.component';
 export class DateNightDetailComponent implements OnInit {
     pageTitle: string = 'Date Night Detail';
     dateNight: IDateNight;
+    prevDateNight: IDateNight;
+    nextDateNight: IDateNight;
     errorMessage: string;
     private sub: Subscription;
 
@@ -26,14 +28,17 @@ export class DateNightDetailComponent implements OnInit {
     ngOnInit(){
         this.sub = this.route.params.subscribe(
             params => {
-                let slug = params['slug'];          
-                this.pageTitle += `: ${slug}`;
-                this.getDateNight(slug);
+                let slug = params['slug'];
+                this.pageTitle += `: ${slug}`;      
+                this.getDateNight(slug);       
         });
     }
+
     getDateNight(slug: string) {
-        this.service.getProduct(slug).subscribe(
-            date => this.dateNight = date,
+        this.service.getDateNight(slug).subscribe(
+            date => this.dateNight = date, 
             error => this.errorMessage = <any>error);
+            
+        //this.getPrevDateNight(this.dateNight.dateNightId - 1); 
     }
 }

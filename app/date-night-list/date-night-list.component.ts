@@ -3,11 +3,12 @@ import { Component, OnInit, Input } from '@angular/core';
 import { IDateNight } from '../date-night/date-night';
 import { DateNightService } from '../date-night/date-night.service';
 import { StarComponent } from '../star-rating/star.component';
+import { CostComponent } from '../cost-rating/cost.component';
 
 @Component({
     templateUrl: 'app/date-night-list/date-night-list.component.html',
     styleUrls: ['app/date-night-list/date-night-list.component.css'],
-    providers: [StarComponent]
+    providers: [StarComponent, CostComponent]
 })
 
 export class DateNightListComponent implements OnInit {

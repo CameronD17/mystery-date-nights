@@ -1,17 +1,60 @@
 <div class="col-md-10 col-md-offset-1">
     <div class="panel panel-primary" *ngIf='dateNight'>
         <div class="panel-heading">
-            <h1>{{ dateNight.locationName }}</h1>
+            <h1> <span *ngIf='dateNight.dogFriendly' class="glyphicon glyphicon-heart text-right" title="This place is dog-friendly!"></span> {{ dateNight.locationName }} <span *ngIf='dateNight.favourite' class="glyphicon glyphicon-heart text-right" title="This is one of our favourite places!"></span></h1> 
         </div>
-        <div class="panel-body">
+        <div class="panel-body" *ngIf='dateNight.planner != "Unofficial"'>
             <div class="row">
                 <div class="col-md-12">
+                    <div class="content-section">
                     <table>
                         <tbody>
                             <tr>
                                 <td>Visited on: </td>     
-                                <td>{{ dateNight.visitDate }}</td>
+                                <td>{{ dateNight.visitDate | date:"dd MMM yyyy"  }}</td>
                             </tr>
+                            <tr>
+                                <td>Restaurant Type: </td>     
+                                <td>{{ dateNight.type }}</td>
+                            </tr>
+                            <tr>
+                                <td>Average Cost: </td>     
+                                <td><cost-rating [rating]='dateNight.price'></cost-rating></td>
+                            </tr>                            
+                            <tr>
+                                <td>Planned by: </td>     
+                                <td>{{ dateNight.planner }} (date night #{{ dateNight.dateNightId }})</td>
+                            </tr>
+                            <tr>
+                                <td>Rating (Cameron): </td>     
+                                <td><star-rating [rating]='dateNight.starRatingCameron'></star-rating></td>
+                            </tr>
+                            <tr>
+                                <td>Rating (Sasha): </td>     
+                                <td><star-rating [rating]='dateNight.starRatingSasha'></star-rating></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    </div>
+                    <div class="col-md-6">
+                        <p><a href="{{ dateNight.website }}">{{ dateNight.website }}</a></p>
+                    </div>                    
+                    <div class="col-md-6">
+                        <p class="text-right">{{ dateNight.address }}</p>
+                    </div>
+                    <div *ngIf='dateNight.review'>
+                        <h2>Notes</h2>
+                        <p>{{ dateNight.review }}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="panel-body" *ngIf='dateNight.planner == "Unofficial"'>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="content-section">
+                    <table>
+                        <tbody>
                             <tr>
                                 <td>Restaurant Type: </td>     
                                 <td>{{ dateNight.type }}</td>
@@ -30,11 +73,17 @@
                             </tr>
                         </tbody>
                     </table>
-                    <br/>
-                    <p>{{ dateNight.website }}</p>
-                    <p>{{ dateNight.address }}</p>
-                    
-                    <p>{{ dateNight.review }}</p>
+                    </div>
+                    <div class="col-md-6">
+                        <p><a href="{{ dateNight.website }}">{{ dateNight.website }}</a></p>
+                    </div>                    
+                    <div class="col-md-6">
+                        <p class="text-right">{{ dateNight.address }}</p>
+                    </div>
+                    <div>
+                        <h2>Notes</h2>
+                        <p>We visited this location outwith our Mystery Date Night schedule on {{ dateNight.visitDate | date:"dd MMM yyyy" }}.</p>
+                    </div>
                 </div>
             </div>
         </div>

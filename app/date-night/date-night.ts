@@ -10,6 +10,7 @@ export interface IDateNight {
     starRatingSasha: number;
     onMap: boolean;
     dogFriendly: boolean;
+    favourite: boolean;
     address: string;
     website: string;
 }

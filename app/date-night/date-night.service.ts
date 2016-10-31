@@ -11,11 +11,9 @@ export class DateNightService {
 
     getDateNights(): Observable<IDateNight[]> {
         if (this.cached) {
-            console.log("Cached.");
             return Observable.of(this.cached);
         }
         else {
-            console.log("Not cached.");
             return this._http.get(this._dateNightData)
                 .map(res => res.json())
                 .do((data) => {
@@ -25,9 +23,14 @@ export class DateNightService {
         }
     }
 
-    getProduct(slug: string): Observable<IDateNight> {
+    getDateNight(slug: string): Observable<IDateNight> {
         return this.getDateNights()
-            .map((products: IDateNight[]) => products.find(p => p.slug === slug));
+            .map((dates: IDateNight[]) => dates.find(p => p.slug === slug));            
+    }
+
+    getDateNightById(id: number): Observable<IDateNight> {
+        return this.getDateNights()
+            .map((dates: IDateNight[]) => dates.find(p => p.dateNightId === id));
     }
 
     private handleError(error: Response) {

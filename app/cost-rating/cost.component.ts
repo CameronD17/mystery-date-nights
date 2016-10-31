@@ -1,17 +1,10 @@
-import { Component, OnChanges, Input, Output, EventEmitter } from '@angular/core';
+import { Component, OnChanges, Input } from '@angular/core';
 
 @Component({
     selector: 'cost-rating',
-    templateUrl: 'app/cost-rating/cost.component.html',
-    styleUrls: ['app/cost-rating/cost.component.css']
+    templateUrl: 'app/cost-rating/cost.component.html'
 })
 
-export class CostComponent implements OnChanges{
+export class CostComponent{
     @Input() rating: number;
-    gbpWidth: number;
-    @Output() ratingClicked: EventEmitter<string> = new EventEmitter<string>();
-
-    ngOnChanges() {
-        this.gbpWidth = this.rating * 86 / 5;
-    }
 }

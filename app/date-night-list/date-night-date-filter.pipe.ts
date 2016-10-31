@@ -30,9 +30,21 @@ export class DateNightOrderPipe implements PipeTransform {
                         return -1 * byVal;
                     } else if (a.type > b.type) {
                         return 1 * byVal;
-                    } else if(a.locationName < b.locationName) {
+                    } else if(a.locationName > b.locationName) {
                         return -1 * byVal;
-                    } else if (a.locationName > b.locationName) {
+                    } else if (a.locationName < b.locationName) {
+                        return 1 * byVal;
+                    } else {
+                        return 0;
+                    }
+                } else if (column == 'price') {
+                    if(a.price < b.price) {
+                        return -1 * byVal;
+                    } else if (a.price > b.price) {
+                        return 1 * byVal;
+                    } else if(a.locationName > b.locationName) {
+                        return -1 * byVal;
+                    } else if (a.locationName < b.locationName) {
                         return 1 * byVal;
                     } else {
                         return 0;
@@ -44,9 +56,9 @@ export class DateNightOrderPipe implements PipeTransform {
                         return 1 * byVal;
                     } else if (aRating > bRating) {
                         return -1 * byVal;
-                    } else if(a.locationName < b.locationName) {
+                    } else if(a.locationName > b.locationName) {
                         return 1 * byVal;
-                    } else if (a.locationName > b.locationName) {
+                    } else if (a.locationName < b.locationName) {
                         return -1 * byVal;
                     } else {
                         return 0;

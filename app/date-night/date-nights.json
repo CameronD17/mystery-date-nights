@@ -226,7 +226,7 @@
         "starRatingCameron": 4,
         "starRatingSasha": 4,
         "onMap": true,
-        "dogFriendly": false,
+        "dogFriendly": true,
         "favourite": true,
         "address": "42-58 Angle Park Terrace, Edinburgh, EH11 2JR",
         "website": "http://thecaleysampleroom.co.uk",

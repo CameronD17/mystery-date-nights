@@ -1,7 +1,7 @@
 <div class="col-md-10 col-md-offset-1">
     <div class="panel panel-primary" *ngIf='dateNight'>
         <div class="panel-heading">
-            <h1> <span *ngIf='dateNight.dogFriendly' class="glyphicon glyphicon-heart text-right" title="This place is dog-friendly!"></span> {{ dateNight.locationName }} <span *ngIf='dateNight.favourite' class="glyphicon glyphicon-heart text-right" title="This is one of our favourite places!"></span></h1> 
+            <h1> <span *ngIf='dateNight.dogFriendly' title="This place is dog-friendly!"><i class="fa fa-paw"></i></span> {{ dateNight.locationName }} <span *ngIf='dateNight.favourite' title="This is one of our favourite places!"><i class="fa fa-heart"></i></span></h1> 
         </div>
         <div class="panel-body" *ngIf='dateNight.planner != "Unofficial"'>
             <div class="row">

@@ -707,5 +707,24 @@
         "website": "http://shebeenbar.co.uk",
         "latitude": "55.9459",
         "longitude": "-3.2060"
+    },
+    {
+        "slug": "auld-hoose",
+        "dateNightId": 26,
+        "locationName": "The Auld Hoose",
+        "visitDate": "2016-11-06",
+        "review": "Meat-heavy African themed menu. Slightly on the expensive side, but you do get a generous and good quality portion for your money. Decor aligns nicely with the theme.",
+        "type": "Scottish",
+        "price": 2,
+        "planner": "Cameron",
+        "starRatingCameron": 4.5,
+        "starRatingSasha": 4,
+        "onMap": true,
+        "dogFriendly": true,
+        "favourite": false,
+        "address": "23-25 St. Leonard's St, Edinburgh, EH8 9QN",
+        "website": "http://theauldhoose.co.uk",
+        "latitude": "55.9435",
+        "longitude": "-3.1802"
     }
 ]

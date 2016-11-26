@@ -11,10 +11,12 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var core_1 = require('@angular/core');
 var date_night_service_1 = require('../date-night/date-night.service');
 var star_component_1 = require('../star-rating/star.component');
+var cost_component_1 = require('../cost-rating/cost.component');
 var DateNightListComponent = (function () {
     function DateNightListComponent(_dateNightService) {
         this._dateNightService = _dateNightService;
         this.pageTitle = 'Date Night List';
+        this.favouriteFilter = false;
         this.column = 'visitDate';
         this.descending = true;
     }
@@ -40,11 +42,20 @@ var DateNightListComponent = (function () {
             return this.column;
         }
     };
+    DateNightListComponent.prototype.iconClick = function (columnName) {
+        if (columnName == 'dogFriendly') {
+            console.log("Dog friendly");
+            this.icon = 'dogFriendly';
+        }
+        else {
+            return this.column;
+        }
+    };
     DateNightListComponent = __decorate([
         core_1.Component({
             templateUrl: 'app/date-night-list/date-night-list.component.html',
             styleUrls: ['app/date-night-list/date-night-list.component.css'],
-            providers: [date_night_service_1.DateNightService, star_component_1.StarComponent]
+            providers: [star_component_1.StarComponent, cost_component_1.CostComponent]
         }), 
         __metadata('design:paramtypes', [date_night_service_1.DateNightService])
     ], DateNightListComponent);

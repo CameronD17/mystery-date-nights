@@ -9,8 +9,10 @@
   },
   "scripts": {
     "postinstall": "typings install",
+    "tsc": "tsc",
+    "tsc:w": "tsc -w",
     "prestart": "webpack",
-    "start": "concurrently \"webpack --watch\" \"nodemon server.js\" \"lite-server\" ",
+    "start": "concurrently \"npm run tsc:w\" \"webpack --watch\" \"nodemon server.js\" \"lite-server\" ",
     "typings": "typings",
     "lite": "lite-server"
   },

@@ -14,6 +14,8 @@ import { CostComponent } from '../cost-rating/cost.component';
 export class DateNightListComponent implements OnInit {
     pageTitle: string = 'Date Night List';
     listFilter: string;
+    icon: string;
+    favouriteFilter: boolean = false;
     dateNights: IDateNight[];
     errorMessage: string;
 
@@ -40,6 +42,15 @@ export class DateNightListComponent implements OnInit {
     convertSorting(): string {
         if (this.descending) {
             return '!' + this.column;
+        } else {
+            return this.column;
+        }
+    }
+
+    iconClick(columnName: string): string {
+        if (columnName == 'dogFriendly') {
+            console.log("Dog friendly");
+            this.icon = 'dogFriendly';
         } else {
             return this.column;
         }

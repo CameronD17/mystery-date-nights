@@ -713,7 +713,7 @@
         "dateNightId": 26,
         "locationName": "The Auld Hoose",
         "visitDate": "2016-11-06",
-        "review": "Meat-heavy African themed menu. Slightly on the expensive side, but you do get a generous and good quality portion for your money. Decor aligns nicely with the theme.",
+        "review": "Relaxed metal bar with unbelievably huge nachos. Dog-friendly, with a good selection of reasonably-priced beers on tap.",
         "type": "Scottish",
         "price": 2,
         "planner": "Cameron",
@@ -726,5 +726,24 @@
         "website": "http://theauldhoose.co.uk",
         "latitude": "55.9435",
         "longitude": "-3.1802"
+    },
+    {
+        "slug": "westroom",
+        "dateNightId": 27,
+        "locationName": "The Westroom",
+        "visitDate": "2016-11-20",
+        "review": "Cosy sports bar in the West End. Decent beers on tap, good quality food, but the atmosphere is a bit lacking.",
+        "type": "Scottish",
+        "price": 2,
+        "planner": "Sasha",
+        "starRatingCameron": 3.5,
+        "starRatingSasha": 4,
+        "onMap": true,
+        "dogFriendly": false,
+        "favourite": false,
+        "address": "3 Melville St, Edinburgh, EH3 7PR",
+        "website": "http://thewestroom.co.uk",
+        "latitude": "55.9512",
+        "longitude": "-3.2112"
     }
 ]

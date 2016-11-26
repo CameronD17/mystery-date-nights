@@ -14,16 +14,29 @@ var Rx_1 = require('rxjs/Rx');
 var DateNightService = (function () {
     function DateNightService(_http) {
         this._http = _http;
-        this._dateNightData = 'data/date-nights.json';
+        this._dateNightData = 'app/date-night/date-nights.json';
     }
     DateNightService.prototype.getDateNights = function () {
-        return this._http.get(this._dateNightData)
-            .map(function (response) { return response.json(); })
-            .catch(this.handleError);
+        var _this = this;
+        if (this.cached) {
+            return Rx_1.Observable.of(this.cached);
+        }
+        else {
+            return this._http.get(this._dateNightData)
+                .map(function (res) { return res.json(); })
+                .do(function (data) {
+                _this.cached = data;
+            })
+                .catch(this.handleError);
+        }
     };
-    DateNightService.prototype.getProduct = function (slug) {
+    DateNightService.prototype.getDateNight = function (slug) {
         return this.getDateNights()
-            .map(function (products) { return products.find(function (p) { return p.slug === slug; }); });
+            .map(function (dates) { return dates.find(function (p) { return p.slug === slug; }); });
+    };
+    DateNightService.prototype.getDateNightById = function (id) {
+        return this.getDateNights()
+            .map(function (dates) { return dates.find(function (p) { return p.dateNightId === id; }); });
     };
     DateNightService.prototype.handleError = function (error) {
         console.error(error);

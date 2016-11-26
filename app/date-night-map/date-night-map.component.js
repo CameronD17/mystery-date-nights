@@ -19,7 +19,7 @@ var DateNightMapComponent = (function () {
     }
     DateNightMapComponent.prototype.ngOnInit = function () {
         var _this = this;
-        this.map = L.map('map', { scrollWheelZoom: false }).setView([55.94, -3.21], 13);
+        this.map = L.map('map', { scrollWheelZoom: false }).setView([55.94, -3.22], 12);
         L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
             attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
         }).addTo(this.map);
@@ -45,8 +45,7 @@ var DateNightMapComponent = (function () {
         core_1.Component({
             selector: 'map',
             templateUrl: 'app/date-night-map/date-night-map.component.html',
-            styleUrls: ['app/date-night-map/date-night-map.component.css'],
-            providers: [date_night_service_1.DateNightService]
+            styleUrls: ['app/date-night-map/date-night-map.component.css']
         }), 
         __metadata('design:paramtypes', [date_night_service_1.DateNightService])
     ], DateNightMapComponent);

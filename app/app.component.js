@@ -9,21 +9,18 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var CostComponent = (function () {
-    function CostComponent() {
+var AppComponent = (function () {
+    function AppComponent() {
+        this.pageTitle = 'Mystery Date Nights';
     }
-    __decorate([
-        core_1.Input(), 
-        __metadata('design:type', Number)
-    ], CostComponent.prototype, "rating", void 0);
-    CostComponent = __decorate([
+    AppComponent = __decorate([
         core_1.Component({
-            selector: 'cost-rating',
-            templateUrl: 'app/cost-rating/cost.component.html'
+            selector: 'mdn-app',
+            templateUrl: 'app/app.component.html'
         }), 
         __metadata('design:paramtypes', [])
-    ], CostComponent);
-    return CostComponent;
+    ], AppComponent);
+    return AppComponent;
 }());
-exports.CostComponent = CostComponent;
-//# sourceMappingURL=cost.component.js.map
+exports.AppComponent = AppComponent;
+//# sourceMappingURL=app.component.js.map

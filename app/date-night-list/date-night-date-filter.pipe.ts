@@ -1,71 +1,20 @@
 import { Pipe,PipeTransform } from "@angular/core";
+import { IDateNight } from '../date-night/date-night';
 
 @Pipe({
-    name: "orderBy"
+    name: 'iconFilter',
+    pure: false
 })
 
-export class DateNightOrderPipe implements PipeTransform {
-    transform(array:Array<any>, args: any) {
-        if(array) {
-            let column = args
-            let byVal = 1
-            if(column.charAt(0) == "!") {
-                byVal = -1
-                column = column.substring(1)
-            }
-
-            array.sort((a: any, b: any) => {
-                if (column == 'visitDate') {
-                    return (new Date(a.visitDate).getTime() - new Date(b.visitDate).getTime()) * byVal; 
-                } else if (column == 'locationName') {
-                    if(a.locationName < b.locationName) {
-                        return -1 * byVal;
-                    } else if (a.locationName > b.locationName) {
-                        return 1 * byVal;
-                    } else {
-                        return 0;
-                    }
-                } else if (column == 'type') {
-                    if(a.type < b.type) {
-                        return -1 * byVal;
-                    } else if (a.type > b.type) {
-                        return 1 * byVal;
-                    } else if(a.locationName > b.locationName) {
-                        return -1 * byVal;
-                    } else if (a.locationName < b.locationName) {
-                        return 1 * byVal;
-                    } else {
-                        return 0;
-                    }
-                } else if (column == 'price') {
-                    if(a.price < b.price) {
-                        return -1 * byVal;
-                    } else if (a.price > b.price) {
-                        return 1 * byVal;
-                    } else if(a.locationName > b.locationName) {
-                        return -1 * byVal;
-                    } else if (a.locationName < b.locationName) {
-                        return 1 * byVal;
-                    } else {
-                        return 0;
-                    }
-                } else if (column == 'rating') {
-                    let aRating = a.starRatingCameron + a.starRatingSasha
-                    let bRating = b.starRatingCameron + b.starRatingSasha
-                    if(aRating < bRating) {
-                        return 1 * byVal;
-                    } else if (aRating > bRating) {
-                        return -1 * byVal;
-                    } else if(a.locationName > b.locationName) {
-                        return 1 * byVal;
-                    } else if (a.locationName < b.locationName) {
-                        return -1 * byVal;
-                    } else {
-                        return 0;
-                    }
-                }
-            });
-            return array;
-        }
+export class DateNightIconFilterPipe implements PipeTransform {
+    transform(dateNights: IDateNight[], args: string): IDateNight[]{        
+        if (!dateNights) return null;
+        if (!args) return dateNights;
+        let filter: string = args.toLocaleLowerCase(); 
+        console.log(filter);
+        if (filter == 'dogfriendly') {          
+            console.log("Dog Friendly clicked!");
+            return dateNights.filter((date: IDateNight) => date.dogFriendly); 
+        }       
     }
 }

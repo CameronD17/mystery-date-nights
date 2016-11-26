@@ -1,4 +1,3 @@
-//The pipe class implements the PipeTransform interface's transform method that accepts an input value and an optional array of parameters and returns the transformed value.
 "use strict";
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -10,79 +9,29 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require("@angular/core");
-var DateNightOrderPipe = (function () {
-    function DateNightOrderPipe() {
+var DateNightIconFilterPipe = (function () {
+    function DateNightIconFilterPipe() {
     }
-    DateNightOrderPipe.prototype.transform = function (array, args) {
-        if (array) {
-            var column_1 = args;
-            var byVal_1 = 1;
-            if (column_1.charAt(0) == "!") {
-                byVal_1 = -1;
-                column_1 = column_1.substring(1);
-            }
-            array.sort(function (a, b) {
-                if (column_1 == 'visitDate') {
-                    return (new Date(a.visitDate).getTime() - new Date(b.visitDate).getTime()) * byVal_1;
-                }
-                else if (column_1 == 'locationName') {
-                    if (a.locationName < b.locationName) {
-                        return -1 * byVal_1;
-                    }
-                    else if (a.locationName > b.locationName) {
-                        return 1 * byVal_1;
-                    }
-                    else {
-                        return 0;
-                    }
-                }
-                else if (column_1 == 'type') {
-                    if (a.type < b.type) {
-                        return -1 * byVal_1;
-                    }
-                    else if (a.type > b.type) {
-                        return 1 * byVal_1;
-                    }
-                    else if (a.locationName < b.locationName) {
-                        return -1 * byVal_1;
-                    }
-                    else if (a.locationName > b.locationName) {
-                        return 1 * byVal_1;
-                    }
-                    else {
-                        return 0;
-                    }
-                }
-                else if (column_1 == 'rating') {
-                    var aRating = a.starRatingCameron + a.starRatingSasha;
-                    var bRating = b.starRatingCameron + b.starRatingSasha;
-                    if (aRating < bRating) {
-                        return -1 * byVal_1;
-                    }
-                    else if (aRating > bRating) {
-                        return 1 * byVal_1;
-                    }
-                    else if (a.locationName < b.locationName) {
-                        return -1 * byVal_1;
-                    }
-                    else if (a.locationName > b.locationName) {
-                        return 1 * byVal_1;
-                    }
-                    else {
-                        return 0;
-                    }
-                }
-            });
-            return array;
+    DateNightIconFilterPipe.prototype.transform = function (dateNights, args) {
+        if (!dateNights)
+            return null;
+        if (!args)
+            return dateNights;
+        var filter = args.toLocaleLowerCase();
+        console.log(filter);
+        if (filter == 'dogfriendly') {
+            console.log("Dog Friendly clicked!");
+            return dateNights.filter(function (date) { return date.dogFriendly; });
         }
     };
-    DateNightOrderPipe = __decorate([
+    DateNightIconFilterPipe = __decorate([
         core_1.Pipe({
-            name: "orderBy"
+            name: 'iconFilter',
+            pure: false
         }), 
         __metadata('design:paramtypes', [])
-    ], DateNightOrderPipe);
-    return DateNightOrderPipe;
+    ], DateNightIconFilterPipe);
+    return DateNightIconFilterPipe;
 }());
-exports.DateNightOrderPipe = DateNightOrderPipe;
+exports.DateNightIconFilterPipe = DateNightIconFilterPipe;
 //# sourceMappingURL=date-night-date-filter.pipe.js.map

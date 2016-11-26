@@ -30,12 +30,13 @@ var DateNightDetailComponent = (function () {
     };
     DateNightDetailComponent.prototype.getDateNight = function (slug) {
         var _this = this;
-        this.service.getProduct(slug).subscribe(function (date) { return _this.dateNight = date; }, function (error) { return _this.errorMessage = error; });
+        this.service.getDateNight(slug).subscribe(function (date) { return _this.dateNight = date; }, function (error) { return _this.errorMessage = error; });
+        //this.getPrevDateNight(this.dateNight.dateNightId - 1); 
     };
     DateNightDetailComponent = __decorate([
         core_1.Component({
-            providers: [date_night_service_1.DateNightService, star_component_1.StarComponent, cost_component_1.CostComponent],
-            templateUrl: 'app/date-night-detail/date-night-detail.component.html'
+            templateUrl: 'app/date-night-detail/date-night-detail.component.html',
+            providers: [star_component_1.StarComponent, cost_component_1.CostComponent]
         }), 
         __metadata('design:paramtypes', [router_1.ActivatedRoute, router_1.Router, date_night_service_1.DateNightService])
     ], DateNightDetailComponent);

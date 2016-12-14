@@ -781,5 +781,24 @@
         "website": "http://thewestroom.co.uk",
         "latitude": "55.9512",
         "longitude": "-3.2112"
+    },
+    {
+        "slug": "makars",
+        "dateNightId": 28,
+        "locationName": "Makars Gourmet Mash Bar",
+        "visitDate": "2016-12-12",
+        "review": "Good quality Scottish food with an emphasis on mashed potatoes (explicitly not deep-fat-fried chips or fries). Good drinks selection, reasonably priced, including their own Makars craft beer.",
+        "type": "Scottish",
+        "price": 2,
+        "planner": "Sasha",
+        "starRatingCameron": 3.5,
+        "starRatingSasha": 3.5,
+        "onMap": true,
+        "dogFriendly": false,
+        "favourite": false,
+        "address": "9 North Bank St, Edinburgh, EH1 2LP",
+        "website": "http://gourmet-mash-bar.co.uk",
+        "latitude": "55.9499",
+        "longitude": "-3.1937"
     }
 ]

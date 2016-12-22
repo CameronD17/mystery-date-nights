@@ -214,7 +214,25 @@
         "website": "http://theshandwicksedinburgh.co.uk",
         "latitude": "55.9507",
         "longitude": "-3.2061"
-    },    
+    },
+    {
+        "slug": "sheep-heid-inn",
+        "locationName": "Sheep Heid Inn",
+        "visitDate": "2016-09-11",
+        "review": "",
+        "type": "Scottish",
+        "price": 2,
+        "planner": "Unofficial",
+        "starRatingCameron": 4,
+        "starRatingSasha": 4,
+        "onMap": true,
+        "dogFriendly": true,
+        "favourite": true,
+        "address": "43-45 The Causeway, Edinburgh, EH15 3QA",
+        "website": "http://thesheepheidedinburgh.co.uk",
+        "latitude": "55.9420",
+        "longitude": "-3.1486"
+    },
     {
         "slug": "caley-sample",
         "locationName": "The Caley Sample Room",
@@ -669,27 +687,8 @@
         "longitude": "-3.2090"
     },
     {
-        "slug": "sheep-heid-inn",
-        "dateNightId": 22,
-        "locationName": "Sheep Heid Inn",
-        "visitDate": "2016-09-11",
-        "review": "Cosy and authentic historic Scottish pub. Fantastic quality food, great staff and drinks. Can get busy, so booking ahead of time is advised. Dog-friendly, and a great place to relax after a long walk up Arthur's Seat.",
-        "type": "Scottish",
-        "price": 2,
-        "planner": "Unofficial",
-        "starRatingCameron": 4,
-        "starRatingSasha": 4,
-        "onMap": true,
-        "dogFriendly": true,
-        "favourite": true,
-        "address": "43-45 The Causeway, Edinburgh, EH15 3QA",
-        "website": "http://thesheepheidedinburgh.co.uk",
-        "latitude": "55.9420",
-        "longitude": "-3.1486"
-    },
-    {
         "slug": "whistle-stop-barber-shop",
-        "dateNightId": 23,
+        "dateNightId": 22,
         "locationName": "Whistle Stop Barber Shop",
         "visitDate": "2016-09-24",
         "review": "Good quality American burgers, decent drinks selection. Atmosphere is not the most inviting, music is very loud. Staff are reasonably attentive, but not as good as you'd expect from an American-themed restaurant.",
@@ -708,7 +707,7 @@
     },
     {
         "slug": "murrayfield-bar",
-        "dateNightId": 24,
+        "dateNightId": 23,
         "locationName": "Murrayfield Bar",
         "visitDate": "2016-10-08",
         "review": "Popular sports bar near Murrayfield. Good quality Scottish food, and a good drinks selection. Friendly and attentive staff. Avoid when there is a big event at Murrayfield Stadium; far too busy.",
@@ -727,7 +726,7 @@
     },
     {
         "slug": "shebeen",
-        "dateNightId": 25,
+        "dateNightId": 24,
         "locationName": "Shebeen Bar and Braai",
         "visitDate": "2016-10-16",
         "review": "Meat-heavy African themed menu. Slightly on the expensive side, but you do get a generous and good quality portion for your money. Decor aligns nicely with the theme.",
@@ -746,14 +745,14 @@
     },
     {
         "slug": "auld-hoose",
-        "dateNightId": 26,
+        "dateNightId": 25,
         "locationName": "The Auld Hoose",
         "visitDate": "2016-11-06",
         "review": "Relaxed metal bar with unbelievably huge nachos. Dog-friendly, with a good selection of reasonably-priced beers on tap.",
         "type": "Scottish",
         "price": 2,
         "planner": "Cameron",
-        "starRatingCameron": 4.5,
+        "starRatingCameron": 4,
         "starRatingSasha": 4,
         "onMap": true,
         "dogFriendly": true,
@@ -765,7 +764,7 @@
     },
     {
         "slug": "westroom",
-        "dateNightId": 27,
+        "dateNightId": 26,
         "locationName": "The Westroom",
         "visitDate": "2016-11-20",
         "review": "Cosy sports bar in the West End. Decent beers on tap, good quality food, but the atmosphere is a bit lacking.",
@@ -784,7 +783,7 @@
     },
     {
         "slug": "makars",
-        "dateNightId": 28,
+        "dateNightId": 27,
         "locationName": "Makars Gourmet Mash Bar",
         "visitDate": "2016-12-12",
         "review": "Good quality Scottish food with an emphasis on mashed potatoes (explicitly not deep-fat-fried chips or fries). Good drinks selection, reasonably priced, including their own Makars craft beer.",
@@ -800,5 +799,24 @@
         "website": "http://gourmet-mash-bar.co.uk",
         "latitude": "55.9499",
         "longitude": "-3.1937"
+    },
+    {
+        "slug": "bon-vivant",
+        "dateNightId": 28,
+        "locationName": "The Bon Vivant",
+        "visitDate": "2016-12-21",
+        "review": "Gourmet French-inspired menu that rotates often. Food is superb, and the whisky and beer selection is great. Slightly on the pricey side, but the popularity shows that it's not undeserved.",
+        "type": "French",
+        "price": 3,
+        "planner": "Cameron",
+        "starRatingCameron": 4.5,
+        "starRatingSasha": 4,
+        "onMap": true,
+        "dogFriendly": false,
+        "favourite": false,
+        "address": "55 Thistle St, Edinburgh, EH2 1DY",
+        "website": "http://bonvivantedinburgh.co.uk",
+        "latitude": "55.954",
+        "longitude": "-3.2"
     }
 ]

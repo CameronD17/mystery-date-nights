@@ -818,5 +818,43 @@
         "website": "http://bonvivantedinburgh.co.uk",
         "latitude": "55.954",
         "longitude": "-3.2"
+    },
+    {
+        "slug": "hard-rock-rome",
+        "dateNightId": 29,
+        "locationName": "Hard Rock Café Rome",
+        "visitDate": "2017-01-15",
+        "review": "Fairly standard Hard Rock Café. Slightly dated, with a less-than-enthusiastic atmosphere, but the food is as good as you'll get at any other. Surprisingly out of the way compared with the usual in-the-heart-of-things HRC locations.",
+        "type": "American",
+        "price": 3,
+        "planner": "Sasha",
+        "starRatingCameron": 3.5,
+        "starRatingSasha": 4,
+        "onMap": false,
+        "dogFriendly": false,
+        "favourite": false,
+        "address": "Via Vittorio Veneto 62 a/b, Rome, 00187",
+        "website": "http://hardrock.com",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "slug": "il-pastarito",
+        "dateNightId": 30,
+        "locationName": "Il Pastarito",
+        "visitDate": "2017-01-16",
+        "review": "Beautiful Italian pasta with attentive and friendly staff. Wide selection, with quality recommendations available from the staff. Usually quiet with a relaxed, no-rush atmosphere.",
+        "type": "Italian",
+        "price": 2,
+        "planner": "Cameron",
+        "starRatingCameron": 4.5,
+        "starRatingSasha": 4.5,
+        "onMap": false,
+        "dogFriendly": false,
+        "favourite": false,
+        "address": "Via Quattro Novembre 139, Rome, 00187",
+        "website": "http://ilpastarito.com",
+        "latitude": "",
+        "longitude": ""
     }
 ]
